@@ -1,0 +1,138 @@
+/*=== REG FORM STYLESHEET ===*/
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(253, 237, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 18px;
+    
+}
+
+.btn {      
+    color: #000000;   
+    margin: 20px;
+    padding:15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.btn:hover {
+    color: #e2b7cd;
+    transform: translateX(-2px);
+}
+
+p {
+    font-style: italic;
+}
+
+.form-container {    
+    padding: 30px;
+    max-width: 900px; 
+    width: 750px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 20px;           
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    transform: scale(1.2); /* make them bigger */
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+input[type="color"] {
+            height: 45px;
+            padding: 3px;
+            cursor: pointer;
+        }
+
+/* spacing between groups */
+fieldset label:first-of-type {
+    margin-top: 0;
+}
+
+fieldset {
+    border: 1px solid #d48aa4;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #a33b6b;
+    padding: 0 10px;
+}
+
+.button-group {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 120px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+}
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: rgb(180, 60, 100);
+}
+
+
+@media (max-width: 600px) {
+    html {
+        font-size: 110%;
+    }
+
+    .form-container {
+        padding: 2rem;
+    }
+}
